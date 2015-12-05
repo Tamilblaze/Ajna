@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Ajna</string>
+
+    <string name="admin_dash">Admin Dashboard</string>
+    <string name="user_dash">User Dashboard</string>
+    <string name="device_dash">Device Dashboard</string>
+
+    <string name="dfu_update">DFU Update</string>
+    <string name="help_menu">Help</string>
+    <string name="title_activity_mypreferences">Preferences</string>
+    <string name="title_ajna_control">Ajna Device Control</string>
+
+    <string name="title_contactpicker">Contact Picker</string>
+
+    <string name="permission_title">Permission Required</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="admin_block">Admin Settings</string>
+    <string name="sms_block">SMS Contacts Settings</string>
+    <string name="call_block">Call Contacts Settings</string>
+    <string name="idle_block">Idle Alert Settings</string>
+    <string name="tap_block">Tap Settings</string>
+
+    <string name="sms_choser">Enter Number for SMS</string>
+    <string name="call_choser">Enter Number for Calling</string>
+    <string name="idle_call">Call Emergency Number </string>
+    <string name="idle_sms">SMS Emergency Number </string>
+
+    <string name="sms_choser_summ">Click to choose your contact for Sending SMS</string>
+    <string name="idle_call_summ">Select this option to call an emergency number during Idle alert </string>
+    <string name="idle_sms_summ">Select this option to SMS an emergency number during Idle alert </string>
+    <string name="call_choser_summ">Click to choose your contact for calling</string>
+
+    <string name="tap_count_summ">Enter Number of taps to trigger SOS</string>
+    <string name="tap_count">Tap Count</string>
+    <string name="tap_call_summ">Select this option to call an emergency number during user Tap </string>
+    <string name="tap_sms_summ">Select this option to SMS an emergency number during user Tap </string>
+
+    <string name="sms_contact">Pick From Contacts</string>
+    <string name="call_contact">Pick From Contacts</string>
+
+    <string name="sms_contact_summ">Manually enter Contact Number for sending SMS</string>
+    <string name="call_contact_summ">Manually enter Contact Number for calling</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>@string/admin_dash</item>
+        <item>@string/user_dash</item>
+        <item>@string/device_dash</item>
+    </string-array>
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="dfu_service_title">nRF Toolbox DFU Proxy</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_create_fragment">Hello create fragment</string>
+    <string name="hello_read_fragment">Hello read fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dfu_confirmation_dialog_title">Application Uploading</string>
+    <string name="dfu_upload_dialog_cancel_message">Are you sure you want to cancel upload?</string>
+    <string name="dfu_uploading_percentage">%d%%</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="zipfile">Zip File</string>
+    <string name="softdevice">Soft Device</string>
+</resources>

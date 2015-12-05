@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tamilblaze.example.ajna01" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PreferenceActivity"
+            android:label="@string/title_activity_mypreferences" />
+        <activity
+            android:name=".ContactPicker"
+            android:label="@string/title_contactpicker" />
+        <activity
+            android:name=".CallContactPicker"
+            android:label="@string/title_contactpicker" />
+        <activity
+            android:name=".DeviceScanActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <service
+            android:name=".TrackMovement"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".BluetoothLeService"
+            android:enabled="true" />
+
+        <service android:name=".DfuService"
+            android:exported="true"
+            android:label="@string/dfu_service_title" >
+            <intent-filter>
+                <action android:name="no.nordicsemi.android.action.DFU_UPLOAD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".AjnaControl"
+            android:label="@string/title_ajna_control" />
+        <activity android:name=".UserActivity" >
+        </activity>
+        <activity android:name=".DfuActivity" >
+        </activity>
+    </application>
+
+</manifest>

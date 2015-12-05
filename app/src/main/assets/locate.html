@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Locate</title>
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+    <script>
+function getParameterByName(name) {
+	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+
+function initialize() {
+	var lat = getParameterByName('lat');
+	var lon = getParameterByName('lon');
+	//alert ("coordinates"+lat+"/"+lon);
+
+  var mylocation= new google.maps.LatLng(parseFloat(lat),parseFloat(lon));
+
+
+  var mapProp = {
+    center:mylocation,
+    zoom:14,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+  var marker1 = new google.maps.Marker({
+  position: mylocation,
+  title:'Your Ajna',
+    icon: 'images/marker.png'
+  });
+
+  marker1.setMap(map);
+
+marker1.addListener('click', function() {
+    showAddress();
+  });
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+
+
+    </script>
+</head>
+<body>
+<div id="googleMap" style="height:500px"></div>
+<script>
+ function showAddress(){
+ Android.showAndroidAddress();
+
+    }
+
+
+
+</script>
+</body>
+</html>
+	

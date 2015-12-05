@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/admin_block">
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/sms_block">
+        <EditTextPreference
+            android:key="smsContact"
+            android:summary="@string/sms_contact_summ"
+            android:title="@string/sms_choser" />
+
+        <PreferenceScreen
+            android:summary="@string/sms_choser_summ"
+            android:title="@string/sms_contact">
+            <intent
+                android:targetClass="com.tamilblaze.example.ajna01.ContactPicker"
+                android:targetPackage="com.tamilblaze.example.ajna01" />
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/call_block">
+
+        <EditTextPreference
+            android:key="callContact"
+            android:summary="@string/call_contact_summ"
+            android:title="@string/call_choser" />
+
+        <PreferenceScreen
+            android:summary="@string/call_choser_summ"
+            android:title="@string/call_contact">
+            <intent
+                android:targetClass="com.tamilblaze.example.ajna01.CallContactPicker"
+                android:targetPackage="com.tamilblaze.example.ajna01" />
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/idle_block">
+        <CheckBoxPreference
+            android:key="idle_call"
+            android:summary="@string/idle_call_summ"
+            android:title="@string/idle_call" />
+        <CheckBoxPreference
+            android:key="idle_sms"
+            android:summary="@string/idle_sms_summ"
+            android:title="@string/idle_sms" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/tap_block">
+        <EditTextPreference
+            android:key="tapcount"
+            android:summary="@string/tap_count_summ"
+            android:title="@string/tap_count" />
+
+        <CheckBoxPreference
+            android:key="tap_call"
+            android:summary="@string/tap_call_summ"
+            android:title="@string/idle_call" />
+        <CheckBoxPreference
+            android:key="tap_sms"
+            android:summary="@string/idle_sms_summ"
+            android:title="@string/idle_sms" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
